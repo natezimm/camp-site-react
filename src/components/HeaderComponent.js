@@ -82,7 +82,7 @@ class Header extends Component {
                                 </Button>
                             </span>
                         </Collapse>
-                    </div>
+                    </div>j
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
