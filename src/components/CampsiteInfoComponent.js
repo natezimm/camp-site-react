@@ -96,7 +96,7 @@ class CommentForm extends Component {
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <div className="form-group">
                                 <Label>Rating</Label>
-                                <Control.select model=".rating" name="rating" id="rating"
+                                <Control.Select model=".rating" name="rating" id="rating"
                                     className="form-control"
                                 >
                                     <option>1</option>
@@ -104,11 +104,11 @@ class CommentForm extends Component {
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
-                                </Control.select>
+                                </Control.Select>
                             </div>
                             <div className="form-group">
                                 <Label>Your Name</Label>
-                                <Control.text model=".author" name="author" id="author"
+                                <Control.Text model=".author" name="author" id="author"
                                     className="form-control"
                                     validators={{
                                         minLength: minLength(2),
@@ -128,7 +128,7 @@ class CommentForm extends Component {
                             </div>
                             <div className="form-group">
                                 <Label>Comment</Label>
-                                <Control.textarea model=".text" name="text" id="text"
+                                <Control.Textarea model=".text" name="text" id="text"
                                     className="form-control" 
                                     rows="6"
                                 />
